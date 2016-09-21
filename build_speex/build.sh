@@ -54,7 +54,7 @@ do
     --with-ogg-includes=$OGGHEADERPATH
     CC="$CC" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS"
     make -j5 install
-    cd $CWD
+    make clean
 done
 
 echo "building fat lib..."
